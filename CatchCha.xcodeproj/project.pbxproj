@@ -15,6 +15,7 @@
 		BEC4B4B9291FC997004FE99C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC4B4B8291FC997004FE99C /* MapViewController.swift */; };
 		BEC4B4BE291FC9F5004FE99C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC4B4BD291FC9F5004FE99C /* ListViewController.swift */; };
 		BEC4B4C1291FCA05004FE99C /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC4B4C0291FCA05004FE99C /* SettingViewController.swift */; };
+		D502A000291FE96B00737765 /* PartyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5029FFF291FE96B00737765 /* PartyViewController.swift */; };
 		D559B3BA291FD35C008F585C /* PartyloadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D559B3B9291FD35C008F585C /* PartyloadingViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		BEC4B4B8291FC997004FE99C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		BEC4B4BD291FC9F5004FE99C /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		BEC4B4C0291FCA05004FE99C /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		D5029FFF291FE96B00737765 /* PartyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyViewController.swift; sourceTree = "<group>"; };
 		D559B3B9291FD35C008F585C /* PartyloadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyloadingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +82,7 @@
 			children = (
 				BEC4B4B8291FC997004FE99C /* MapViewController.swift */,
 				D559B3B9291FD35C008F585C /* PartyloadingViewController.swift */,
+				D5029FFF291FE96B00737765 /* PartyViewController.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D502A000291FE96B00737765 /* PartyViewController.swift in Sources */,
 				D559B3BA291FD35C008F585C /* PartyloadingViewController.swift in Sources */,
 				BEC4B4A5291FC80D004FE99C /* AppDelegate.swift in Sources */,
 				BEC4B4A7291FC80D004FE99C /* SceneDelegate.swift in Sources */,
