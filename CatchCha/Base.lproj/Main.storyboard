@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ASh-cf-ulK">
-
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -162,74 +159,6 @@
             </objects>
             <point key="canvasLocation" x="811" y="-332"/>
         </scene>
-
-        <!--Destination View Controller-->
-        <scene sceneID="8cJ-Wd-Wk9">
-            <objects>
-                <viewController storyboardIdentifier="DestinationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3pD-1x-AH5" customClass="DestinationViewController" customModule="CatchCha" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="bZ4-SB-2b9">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3W4-iG-Da0">
-                                <rect key="frame" x="20" y="79" width="43" height="38"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <imageReference key="image" image="chevron.backward" catalog="system" symbolScale="large"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
-                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="도착지" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2M-1A-N13">
-                                <rect key="frame" x="170.66666666666666" y="86" width="52" height="24"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="TZy-49-2rj">
-                                <rect key="frame" x="15" y="152" width="363" height="56"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="3pD-1x-AH5" id="7MY-Bf-vve"/>
-                                </connections>
-                            </searchBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="검색 결과" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6N-Jy-EMh">
-                                <rect key="frame" x="24.999999999999996" y="238" width="48.666666666666657" height="15.666666666666657"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wJS-js-Gon">
-                                <rect key="frame" x="0.0" y="263.66666666666669" width="393" height="554.33333333333326"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="DNG-Hu-GDN"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="DNG-Hu-GDN" firstAttribute="trailing" secondItem="wJS-js-Gon" secondAttribute="trailing" id="BK9-JL-c6a"/>
-                            <constraint firstItem="L6N-Jy-EMh" firstAttribute="top" secondItem="TZy-49-2rj" secondAttribute="bottom" constant="30" id="DSu-uq-xvi"/>
-                            <constraint firstItem="J2M-1A-N13" firstAttribute="centerY" secondItem="3W4-iG-Da0" secondAttribute="centerY" id="F37-yG-1yf"/>
-                            <constraint firstItem="L6N-Jy-EMh" firstAttribute="leading" secondItem="DNG-Hu-GDN" secondAttribute="leading" constant="25" id="GLC-BZ-87y"/>
-                            <constraint firstItem="wJS-js-Gon" firstAttribute="top" secondItem="L6N-Jy-EMh" secondAttribute="bottom" constant="10" id="WNW-fd-UN8"/>
-                            <constraint firstItem="3W4-iG-Da0" firstAttribute="top" secondItem="DNG-Hu-GDN" secondAttribute="top" constant="20" id="WNg-3I-hca"/>
-                            <constraint firstAttribute="trailing" secondItem="TZy-49-2rj" secondAttribute="trailing" constant="15" id="atl-gR-w42"/>
-                            <constraint firstItem="DNG-Hu-GDN" firstAttribute="bottom" secondItem="wJS-js-Gon" secondAttribute="bottom" id="dS2-ci-yN7"/>
-                            <constraint firstItem="TZy-49-2rj" firstAttribute="leading" secondItem="DNG-Hu-GDN" secondAttribute="leading" constant="15" id="gBf-MQ-fvf"/>
-                            <constraint firstItem="3W4-iG-Da0" firstAttribute="leading" secondItem="DNG-Hu-GDN" secondAttribute="leading" constant="20" id="iPr-tA-2rL"/>
-                            <constraint firstItem="J2M-1A-N13" firstAttribute="centerX" secondItem="DNG-Hu-GDN" secondAttribute="centerX" id="nq3-cr-GUt"/>
-                            <constraint firstItem="TZy-49-2rj" firstAttribute="top" secondItem="3W4-iG-Da0" secondAttribute="bottom" constant="35" id="tW2-4J-3ER"/>
-                            <constraint firstItem="wJS-js-Gon" firstAttribute="leading" secondItem="DNG-Hu-GDN" secondAttribute="leading" id="yQq-3r-puI"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="tableView" destination="wJS-js-Gon" id="ZXJ-0i-lcH"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="S0P-eK-QCO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1585.4961832061067" y="-332.3943661971831"/>
-
         <!--Party View Controller-->
         <scene sceneID="4FL-F4-hJJ">
             <objects>
@@ -809,7 +738,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="chevron.backward" catalog="system" width="97" height="128"/>
         <image name="list.bullet" catalog="system" width="128" height="87"/>
         <image name="map" catalog="system" width="128" height="112"/>
         <image name="partybg" width="389" height="844"/>
