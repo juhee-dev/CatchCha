@@ -390,7 +390,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="btnCatch" destination="gpg-KM-Q0O" id="Um0-Jy-2vw"/>
+                        <outlet property="btnCatch1" destination="gpg-KM-Q0O" id="d1r-yv-iV1"/>
                         <outlet property="viewCatcher" destination="J1e-mn-O0G" id="0Cx-4u-g3c"/>
                         <outlet property="viewCatcher2" destination="ygb-k6-kvw" id="f3e-XU-zvJ"/>
                         <outlet property="viewCatcher3" destination="RQe-6g-Czq" id="a7Y-2p-PJy"/>
@@ -428,7 +428,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="20Z-bA-qI7">
-                                <rect key="frame" x="20" y="169" width="393" height="4"/>
+                                <rect key="frame" x="20" y="169" width="353" height="4"/>
                             </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="현재 Catcher" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kb1-eu-C6Q">
                                 <rect key="frame" x="19.999999999999993" y="213" width="94.333333333333314" height="21"/>
@@ -562,22 +562,28 @@
                                     <constraint firstItem="cVc-gE-8ug" firstAttribute="leading" secondItem="Qvh-mx-BMN" secondAttribute="trailing" constant="14" id="tqQ-Mb-KdU"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2022월 11월 14일 8시 55분" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1kd-X8-zMO">
-                                <rect key="frame" x="27" y="587" width="194.33333333333334" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="최소 출발 인원 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1tQ-ZK-NcZ">
+                                <rect key="frame" x="261" y="529" width="112" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1분 남음" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74c-J0-pN7">
-                                <rect key="frame" x="301" y="587" width="56" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="systemRedColor"/>
+                                <color key="textColor" systemColor="systemGray2Color"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Catchy 해산 시간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olu-56-lTk">
                                 <rect key="frame" x="20" y="561" width="121" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2022월 11월 14일 8시 55분" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1kd-X8-zMO">
+                                <rect key="frame" x="27" y="587" width="194.33333333333334" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3분 남음" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74c-J0-pN7">
+                                <rect key="frame" x="298" y="587" width="59" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60y-ru-aZV">
@@ -591,12 +597,6 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Lead Catcher를 기다려 주세요...."/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="최소 출발 인원 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1tQ-ZK-NcZ">
-                                <rect key="frame" x="261" y="529" width="112" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="systemGray2Color"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sWl-Ns-dTD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -624,7 +624,7 @@
                             <constraint firstItem="1kd-X8-zMO" firstAttribute="leading" secondItem="sWl-Ns-dTD" secondAttribute="leading" constant="27" id="Y9c-Lp-IvM"/>
                             <constraint firstItem="sWl-Ns-dTD" firstAttribute="trailing" secondItem="Ktr-aM-TlH" secondAttribute="trailing" constant="20" id="Zmq-rW-m2E"/>
                             <constraint firstItem="Kb1-eu-C6Q" firstAttribute="leading" secondItem="HUd-4B-rEm" secondAttribute="leading" id="Zvi-Zb-9f6"/>
-                            <constraint firstItem="20Z-bA-qI7" firstAttribute="trailing" secondItem="sWl-Ns-dTD" secondAttribute="trailing" constant="20" id="aed-6o-RAo"/>
+                            <constraint firstItem="20Z-bA-qI7" firstAttribute="trailing" secondItem="sWl-Ns-dTD" secondAttribute="trailing" constant="-20" id="aed-6o-RAo"/>
                             <constraint firstItem="LJ7-Iv-xbO" firstAttribute="leading" secondItem="sWl-Ns-dTD" secondAttribute="leading" id="aol-yS-eeD"/>
                             <constraint firstItem="qSP-6u-Ha8" firstAttribute="leading" secondItem="sWl-Ns-dTD" secondAttribute="leading" constant="20" id="eVx-v4-ewW"/>
                             <constraint firstItem="sWl-Ns-dTD" firstAttribute="trailing" secondItem="hyf-V9-tcv" secondAttribute="trailing" constant="20" id="mJs-eW-BtC"/>
@@ -641,7 +641,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="btnCatch" destination="60y-ru-aZV" id="eti-i2-WPH"/>
+                        <outlet property="btnCatch2" destination="60y-ru-aZV" id="n19-Ro-aC0"/>
                         <outlet property="viewCatcher" destination="dsS-9K-q2p" id="bXd-js-48a"/>
                         <outlet property="viewCatcher2" destination="Ktr-aM-TlH" id="7jQ-sH-iDP"/>
                         <outlet property="viewCatcher3" destination="jab-H9-OD1" id="El0-3C-2eA"/>

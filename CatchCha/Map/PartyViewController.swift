@@ -9,7 +9,7 @@ import UIKit
 
 class PartyViewController: UIViewController {
 
-    @IBOutlet weak var btnCatch: UIButton!
+    @IBOutlet weak var btnCatch1: UIButton!
     @IBOutlet weak var viewCatcher: UIView!
     @IBOutlet weak var viewCatcher2: UIView!
     @IBOutlet weak var viewCatcher3: UIView!
@@ -18,12 +18,12 @@ class PartyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.btnCatch.backgroundColor = UIColor(named: "buttonYellow")
-        self.btnCatch.layer.cornerRadius = 15
+        self.btnCatch1.backgroundColor = UIColor(named: "buttonyellow")
+        self.btnCatch1.layer.cornerRadius = 15
         
         self.viewCatcher.layer.cornerRadius = 20
         self.viewCatcher.layer.borderWidth = 2
-        self.viewCatcher.layer.borderColor = UIColor(named: "buttonYellow")?.cgColor
+        self.viewCatcher.layer.borderColor = UIColor(named: "buttonyellow")?.cgColor
         self.viewCatcher.layer.shadowColor = UIColor.black.cgColor // 검정색 사용
         self.viewCatcher.layer.masksToBounds = false // view 벗어나면 잘라낼 것인지
         self.viewCatcher.layer.shadowOffset = CGSize(width: 0, height: 4) // 위치 조정
