@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hwe-9v-i4X">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -77,17 +77,81 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="partybg" translatesAutoresizingMaskIntoConstraints="NO" id="vZ3-k1-GHi">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="partybg" translatesAutoresizingMaskIntoConstraints="NO" id="vZ3-k1-GHi">
                                 <rect key="frame" x="0.0" y="-41" width="393" height="939"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="인하대 정문" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8C-Xk-S82">
+                                <rect key="frame" x="48" y="279" width="78" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제물포역 1번 출구" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7TW-gL-11v">
+                                <rect key="frame" x="225.66666666666666" y="259" width="119.33333333333334" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LpO-bN-PBg">
+                                <rect key="frame" x="48" y="306" width="297" height="4"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="인하대 정문" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOf-ba-zOF">
+                                <rect key="frame" x="48" y="340" width="78" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="에서" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nun-3k-OuF">
+                                <rect key="frame" x="126" y="340" width="30" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 제물포역 1번 출구" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4b-tL-lg0">
+                                <rect key="frame" x="156" y="340" width="123.66666666666669" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="까지" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZM-em-cQs">
+                                <rect key="frame" x="279.66666666666669" y="340" width="30" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="함께할 Catchy를 찾고 있습니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W4d-qQ-Y9s">
+                                <rect key="frame" x="48" y="361" width="219" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pHD-fd-NeB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="LpO-bN-PBg" firstAttribute="trailing" secondItem="7TW-gL-11v" secondAttribute="trailing" id="0k6-dj-99c"/>
+                            <constraint firstItem="W4d-qQ-Y9s" firstAttribute="top" secondItem="rOf-ba-zOF" secondAttribute="bottom" id="2Zf-co-UjO"/>
+                            <constraint firstItem="OZM-em-cQs" firstAttribute="centerY" secondItem="z4b-tL-lg0" secondAttribute="centerY" id="5Q3-fd-f6l"/>
+                            <constraint firstItem="7TW-gL-11v" firstAttribute="centerY" secondItem="p8C-Xk-S82" secondAttribute="centerY" id="8Kj-WA-cyO"/>
+                            <constraint firstItem="rOf-ba-zOF" firstAttribute="top" secondItem="p8C-Xk-S82" secondAttribute="bottom" constant="40" id="AUg-gT-kdU"/>
+                            <constraint firstItem="Nun-3k-OuF" firstAttribute="leading" secondItem="rOf-ba-zOF" secondAttribute="trailing" id="CYP-gM-TsW"/>
+                            <constraint firstItem="LpO-bN-PBg" firstAttribute="top" secondItem="p8C-Xk-S82" secondAttribute="bottom" constant="6" id="FFV-fr-6jp"/>
+                            <constraint firstItem="p8C-Xk-S82" firstAttribute="top" secondItem="pHD-fd-NeB" secondAttribute="top" constant="220" id="Fft-U2-DlO"/>
+                            <constraint firstItem="Nun-3k-OuF" firstAttribute="centerY" secondItem="rOf-ba-zOF" secondAttribute="centerY" id="GAT-3U-25d"/>
                             <constraint firstItem="vZ3-k1-GHi" firstAttribute="leading" secondItem="pHD-fd-NeB" secondAttribute="leading" id="HNk-3h-IbP"/>
+                            <constraint firstItem="LpO-bN-PBg" firstAttribute="centerX" secondItem="Xn3-0h-zFD" secondAttribute="centerX" id="KMS-Qb-jCI"/>
+                            <constraint firstItem="W4d-qQ-Y9s" firstAttribute="leading" secondItem="rOf-ba-zOF" secondAttribute="leading" id="P1L-6Q-RdX"/>
                             <constraint firstItem="pHD-fd-NeB" firstAttribute="trailing" secondItem="vZ3-k1-GHi" secondAttribute="trailing" id="eX1-P8-EHL"/>
+                            <constraint firstItem="z4b-tL-lg0" firstAttribute="centerY" secondItem="Nun-3k-OuF" secondAttribute="centerY" id="foc-K6-yh4"/>
                             <constraint firstItem="vZ3-k1-GHi" firstAttribute="top" secondItem="pHD-fd-NeB" secondAttribute="top" constant="-100" id="h67-8m-FZM"/>
                             <constraint firstItem="pHD-fd-NeB" firstAttribute="bottom" secondItem="vZ3-k1-GHi" secondAttribute="bottom" constant="-80" id="h6f-eE-mba"/>
+                            <constraint firstItem="p8C-Xk-S82" firstAttribute="leading" secondItem="pHD-fd-NeB" secondAttribute="leading" constant="48" id="h8q-i4-4dx"/>
+                            <constraint firstItem="OZM-em-cQs" firstAttribute="leading" secondItem="z4b-tL-lg0" secondAttribute="trailing" id="hhz-R9-s8C"/>
+                            <constraint firstItem="rOf-ba-zOF" firstAttribute="leading" secondItem="p8C-Xk-S82" secondAttribute="leading" id="iw3-Eq-2pM"/>
+                            <constraint firstItem="pHD-fd-NeB" firstAttribute="trailing" secondItem="7TW-gL-11v" secondAttribute="trailing" constant="48" id="lLk-LH-9mp"/>
+                            <constraint firstItem="7TW-gL-11v" firstAttribute="top" secondItem="pHD-fd-NeB" secondAttribute="top" constant="200" id="n9J-61-HOR"/>
+                            <constraint firstItem="z4b-tL-lg0" firstAttribute="leading" secondItem="Nun-3k-OuF" secondAttribute="trailing" id="w82-iU-MlK"/>
+                            <constraint firstItem="LpO-bN-PBg" firstAttribute="leading" secondItem="p8C-Xk-S82" secondAttribute="leading" id="wfb-Ah-RuP"/>
                         </constraints>
                     </view>
                 </viewController>
